@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home">
+
+        <!-- Video Player (Initially Hidden) -->
+        <WebView
+            android:id="@+id/videoWebView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Back to Home Button -->
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬅ Back to Home"
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Video Links Module"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Sections (Listening, Speaking, etc.) -->
+
+        <TextView android:text="Listening" style="@style/ModuleTitle"/>
+        <Button android:id="@+id/btnListeningVideo" android:text="Watch Listening Video" style="@style/ModuleButton"/>
+        <Button android:id="@+id/btnListeningTutorial" android:text="Open Listening Tutorial" style="@style/ModuleButton"/>
+
+        <TextView android:text="Speaking" style="@style/ModuleTitle"/>
+        <Button android:id="@+id/btnSpeakingVideo" android:text="Watch Speaking Video" style="@style/ModuleButton"/>
+        <Button android:id="@+id/btnSpeakingTutorial" android:text="Open Speaking Tutorial" style="@style/ModuleButton"/>
+
+        <TextView android:text="Reading" style="@style/ModuleTitle"/>
+        <Button android:id="@+id/btnReadingVideo" android:text="Watch Reading Video" style="@style/ModuleButton"/>
+        <Button android:id="@+id/btnReadingTutorial" android:text="Open Reading Tutorial" style="@style/ModuleButton"/>
+
+        <TextView android:text="Writing" style="@style/ModuleTitle"/>
+        <Button android:id="@+id/btnWritingVideo" android:text="Watch Writing Video" style="@style/ModuleButton"/>
+        <Button android:id="@+id/btnWritingTutorial" android:text="Open Writing Tutorial" style="@style/ModuleButton"/>
+
+        <TextView android:text="Vocabulary" style="@style/ModuleTitle"/>
+        <Button android:id="@+id/btnVocabularyVideo" android:text="Watch Vocabulary Video" style="@style/ModuleButton"/>
+        <Button android:id="@+id/btnVocabularyTutorial" android:text="Open Vocabulary Tutorial" style="@style/ModuleButton"/>
+
+        <TextView android:text="Grammar" style="@style/ModuleTitle"/>
+        <Button android:id="@+id/btnGrammarVideo" android:text="Watch Grammar Video" style="@style/ModuleButton"/>
+        <Button android:id="@+id/btnGrammarTutorial" android:text="Open Grammar Tutorial" style="@style/ModuleButton"/>
+    </LinearLayout>
+</ScrollView>

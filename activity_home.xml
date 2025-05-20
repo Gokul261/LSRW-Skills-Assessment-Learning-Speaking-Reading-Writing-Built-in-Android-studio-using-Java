@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="40dp">
+
+        <!-- User Info -->
+
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textAlignment="textEnd"
+            android:textSize="25sp" />
+
+
+        <!-- GridLayout with 12 modules -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="8dp">
+
+            <!-- DAILY TASK -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnDailyTask" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img1"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DAILY TASK" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- LISTENING -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnListening" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img2"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LISTENING" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- SPEAKING -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnSpeaking" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img3"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SPEAKING" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- READING -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnReading" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img4"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="READING" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- WRITING -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnWriting" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img5"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WRITING" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- VOCABULARY -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnVocabulary" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img6"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VOCABULARY" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- GRAMMAR -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnGrammar" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img7"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GRAMMAR" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- video link -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnVideoLink" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/videolink"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VIDEO LINK" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- Feedback -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnFeedBack" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/feedback"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FEEDBACK" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+
+
+          <!-- About us -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnAboutUs" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/aboutus"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ABOUT US" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!-- Logout -->
+            <LinearLayout android:orientation="vertical" android:layout_width="100dp" android:layout_height="120dp" android:gravity="center">
+                <ImageButton android:id="@+id/btnLogout" android:layout_width="80dp" android:layout_height="80dp" android:background="@null" android:src="@drawable/img9"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOGOUT" android:textSize="12sp" android:textColor="#000" android:gravity="center" android:textStyle="italic"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

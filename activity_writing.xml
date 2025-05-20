@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/home">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read This Sentence And Click The Skip"
+        android:textSize="28sp"
+        android:padding="26dp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/paragraph_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paragraph will appear here..."
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Left: 120 sec"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type the paragraph here..."
+        android:visibility="gone"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:minHeight="150dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

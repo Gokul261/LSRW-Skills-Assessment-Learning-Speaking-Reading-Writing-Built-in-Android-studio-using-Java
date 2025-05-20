@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Communication_app"
+        tools:targetApi="31">
+        <activity
+            android:name=".ResultDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultListeningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultWritingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoLinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultVocabularyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FinalDailyTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyTaskActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".DailyTaskActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".DailyTaskActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".DailyTaskActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".ResultGrammarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GrammarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VocabularyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WritingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpeakingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListeningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
